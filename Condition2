@@ -10,4 +10,6 @@ var hasRSVP: Boolean = false;
     } else if (attendee == "Garry" && !hasRSVP) {
         println(s"Well come abroad, $attendee");
         println(s"You have RSVP and that is ${!hasRSVP}");
+    } else {
+        println("Not invited");
     }
