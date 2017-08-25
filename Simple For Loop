@@ -1,0 +1,20 @@
+// Iterating over collections
+
+val list  = List(2,3,4,7,2,6,12);
+    for(num <- list) {
+        print(num + " ");
+    }
+    println();
+val arr = Range(0, 21) ;
+    for(num <- arr) {
+        if(num%2 != 1) {
+            print(s"$num ")
+        }
+    }
+    println();
+    // Order is not fixed and no duplicates for set
+val set = Set(2, 4, 5, "go", "went", "gone", 'c', 5, 5, 4, 2);
+    for(itr <- set) {
+        print(itr + " ")
+    }
+    println();
