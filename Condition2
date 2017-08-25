@@ -1,0 +1,13 @@
+// Condition with if-else-if
+
+val attendee: String = "Garry";
+var hasRSVP: Boolean = false;
+
+    if(attendee == "Samual"  && hasRSVP) {
+        println("Samual is @ meetup but lacks RSVP")
+    } else if(attendee == "Michael" && hasRSVP) {
+        println("Michael is @ event but lacks RSVP")
+    } else if (attendee == "Garry" && !hasRSVP) {
+        println(s"Well come abroad, $attendee");
+        println(s"You have RSVP and that is ${!hasRSVP}");
+    }
