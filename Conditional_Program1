@@ -1,0 +1,9 @@
+# Shows the basic use of conditional statement in Scala
+
+val x : String = "Scala"
+
+    if(x.startsWith("S") && x.endsWith("a")) {
+        println("It is Scala")
+    } else {
+        println("It's something else")
+    }
