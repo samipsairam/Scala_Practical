@@ -1,7 +1,8 @@
 # Shows the basic use of conditional statement in Scala
 
-val x : String = "Scala"
 
+val x : String = "Scala"
+    // Checks the beginning and ending word of Scala 
     if(x.startsWith("S") && x.endsWith("a")) {
         println("It is Scala")
     } else {
