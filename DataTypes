@@ -1,0 +1,26 @@
+/*      :: DATATYPES IN SCALA ::
+
+    Any (super type of all the DataType)
+        --AnyVal (Represents the value types)
+            --Casting is unidirectional and is similar to few languages i.e. Byte->Short->Int->Long->Float->Double
+            --Char->Int
+            --Below are 9 different non-nullable value types
+                ->Unit
+                ->Byte
+                ->Short
+                ->Int
+                ->Long
+                ->Float
+                ->Double
+                ->Char
+                ->Boolean
+                
+        --AnyRef (Represents the reference types)
+            --It corresponds to java.lang.Object
+            --Every user-defined types fallas under AnyRef
+                ->List[Any]
+                ->Option[Any]
+                ->user-defined[Any]
+                
+    --Nothing is subtype of all the datatypes
+*/
