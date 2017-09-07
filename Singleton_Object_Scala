@@ -1,0 +1,9 @@
+
+
+// Singleton Objects
+
+  object welcome {
+    def hw(name: String) = {s"Hello, World! its me $name"}
+  }
+  
+  println(welcome.hw(" Sam"))
