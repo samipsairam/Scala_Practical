@@ -1,0 +1,11 @@
+#This program counts the word of a.txt file in certain location
+
+1) fire-up the terminal 
+2) lunch spark shell :
+$ spark-shell
+$ var myRdd=sc.textFile("fileLocationPath/a.txt")
+$ var eachWord = myRdd.flatMap(_.split(" "))    //splits by space
+$ var rddKV = eachWord.map((_,1))               //mapping each space seperated word to 1 
+$ var finalRdd = rddKV.reduceByKey(_+_)
+$ finalRdd.take(2)                              //using action to verify data
+$ finalRdd.saveAsTextFile("destination_dir_location/dir_name")
