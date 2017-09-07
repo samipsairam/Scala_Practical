@@ -1,0 +1,7 @@
+# Generates random number between two val
+
+def generateRandomNum(maxVal: Int, minVal : Int) : Int = ( math.random * (maxVal-minVal) + minVal ).toInt
+
+// calling function
+var x = generateRandomNum(100, 10)
+while(x != 100) println(generateRanomNum(100, 200))
