@@ -1,0 +1,18 @@
+#This program converts hour min and sec into total mins
+
+ class Time(hr: Int, min: Int, sec: Int){
+    
+    require ((hr >= 1 && hr <=60) & (min >= 1 && min <= 60) & 
+            (sec >=1 && sec <= 60), "Invalid Val")
+
+    def minutesOfDay(hr: Int, min: Int, sec: Int): Unit = {
+      var totalMins = (hr*60) + min + (sec/60)
+      println(s"Total minutes: $totalMins")
+    }
+    
+    println(hr + " " + min + " " + sec )
+ }
+
+ 
+  val t = new Time(60,40,1)
+  print(t.minutesOfDay(2,30,60))
